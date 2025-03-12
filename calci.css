@@ -1,0 +1,61 @@
+.calculator {
+    background-color: black;
+    padding: 20px; 
+    max-width: 400px; /*limit calci width*/
+    margin: 0 auto; /*center the calci horizontally*/
+  }
+  
+  #display {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: right;
+    font-size: 2rem;   
+    border-radius: 10px;
+    max-width:320px; /*limit display width*/
+    border: none;
+    margin: 20px; /*give space to all sides*/
+  }
+
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  button {
+    background-color: hsl(0,0%,30%);
+    color: white;
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /*center content vertically*/
+    justify-content: center; /*center content horizontally*/
+    cursor: pointer;
+    margin: 0 auto; /*Centers buttons in their grid cells*/
+  }
+  
+  button:hover{
+    background-color: hsl(0,0%,40%);
+  }
+  
+  button:active{
+    background-color: hsl(0,0%,50%); 
+  }
+  
+  .optr-btn {
+    background-color: hsl(35,100%,55%);
+  }
+  
+  .optr-btn:hover{
+    background-color: hsl(35,100%,65%);
+  }
+  
+  .optr-btn:active{
+    background-color: hsl(35,100%,75%);
+  }
